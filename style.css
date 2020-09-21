@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Marcellus SC', serif;
+}
+
+body {
+  background-color: black;
+}
+
+img {
+  margin: 0;
+  width: 100vw;
+  object-fit: contain;
+  border: 1px solid red;
+}
+
+a {
+  border: 1px solid blue;
+}
+
+#lightswitch {
+  position: fixed;
+  width: 0.5vw;
+  height: 1vh;
+  top: 40%;
+  left: 13%;
+}
+
+#picture {
+  position: fixed;
+  width: 7.5vw;
+  height: 20vh;
+  top: 4%;
+  left: 14.5%;
+}
+
+#memo {
+  position: fixed;
+  width: 7.8vw;
+  height: 19vh;
+  top: 4%;
+  left: 55%;
+}
+
+#desktop {
+  position: fixed;
+  width: 8vw;
+  height: 15vh;
+  top: 25%;
+  left: 57%;
+}
