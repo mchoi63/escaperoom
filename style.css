@@ -12,17 +12,23 @@ img {
   margin: 0;
   width: 100vw;
   object-fit: contain;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
-a {
-  border: 1px solid blue;
+.switch:hover {
+  /* border: 1px solid blue; */
+  background-color: yellow;
+}
+
+.object:hover {
+  /* border: 1px solid blue; */
+  border: 1px solid green;
 }
 
 #lightswitch {
   position: fixed;
-  width: 0.5vw;
-  height: 1vh;
+  width: 1vw;
+  height: 2vh;
   top: 40%;
   left: 13%;
 }

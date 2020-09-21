@@ -9,14 +9,16 @@
   </head>
   <body>
     <div id="prompt1">
-      Shoot, it is too dark here. Let's find a light switch to turn the light on.<br><br>
+      Shoot, it is too dark here.<br>
+      Let's find a light switch to turn the light on.<br>
+      The switch will turn yellow when you find where it is!<br>
       <button class="btn" onclick="hide()">OK!</button>
       <style media="screen">
         #prompt1 {
           background-color: white;
           position: absolute;
           max-width: 25%;
-          max-height: 12%;
+          max-height: 15%;
           margin: auto;
           margin-top: 10%;
           top: 0; left: 0; bottom: 0; right: 0;
@@ -31,7 +33,7 @@
     </div>
     <div id="imgbox">
       <img src="img/main_offlight.jpg" alt="main.jpg">
-      <a id="lightswitch" href="room2.html"></a>
+      <a class="switch" id="lightswitch" href="room2.html"></a>
     </div>
   </body>
 </html>
