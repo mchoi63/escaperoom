@@ -1,7 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Marcellus SC', serif;
+  font-family: 'VT323', monospace;
+}
+
+p {
+  font-size: 150%;
+  text-align: left;
 }
 
 body {
@@ -12,17 +17,18 @@ img {
   margin: 0;
   width: 100vw;
   object-fit: contain;
-  /* border: 1px solid red; */
 }
 
 .switch:hover {
-  /* border: 1px solid blue; */
   background-color: yellow;
 }
 
+/* .object {
+  border: 1px solid blue;
+} */
+
 .object:hover {
-  /* border: 1px solid blue; */
-  border: 1px solid green;
+  background: rgba(255,255,255,0.1);
 }
 
 #lightswitch {
@@ -34,7 +40,7 @@ img {
 }
 
 #picture {
-  position: fixed;
+  position: absolute;
   width: 7.5vw;
   height: 20vh;
   top: 4%;
@@ -42,7 +48,7 @@ img {
 }
 
 #memo {
-  position: fixed;
+  position: absolute;
   width: 7.8vw;
   height: 19vh;
   top: 4%;
@@ -50,9 +56,165 @@ img {
 }
 
 #desktop {
-  position: fixed;
+  position: absolute;
   width: 8vw;
   height: 15vh;
   top: 25%;
   left: 57%;
+}
+
+#journal {
+  position: absolute;
+  width: 10vw;
+  height: 7vh;
+  top: 38%;
+  left: 30%;
+}
+
+#password {
+  position: absolute;
+  width: 2vw;
+  height: 7vh;
+  top: 40%;
+  left: 5%;
+}
+
+#pic {
+  position: absolute;
+  background-color: black;
+  max-width: 20%;
+  max-height: 50%;
+  margin: auto;
+  margin-top: 10%;
+  top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
+  display: none;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+}
+
+#sunflower {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
+}
+
+#des {
+  color: white;
+  background-color: black;
+  position: absolute;
+  max-width: 25%;
+  max-height: 20%;
+  margin: auto;
+  margin-top: 10%;
+  top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
+  display: none;
+}
+
+#memo_img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
+}
+
+#mem {
+  font-size: 150%;
+  color: white;
+  background-color: black;
+  position: absolute;
+  max-width: 20%;
+  max-height: 50%;
+  margin: auto;
+  margin-top: 10%;
+  top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
+  display: none;
+}
+
+#journal_img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
+}
+
+#jou {
+  font-size: 150%;
+  color: white;
+  background-color: black;
+  position: absolute;
+  max-width: 25%;
+  max-height: 20%;
+  margin: auto;
+  margin-top: 10%;
+  top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
+  display: none;
+}
+
+#pass {
+  font-size: 200%;
+  color: white;
+  background-color: black;
+  position: absolute;
+  max-width: 25%;
+  max-height: 20%;
+  margin: auto;
+  margin-top: 10%;
+  top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-item: stretch;
+  color: white;
+  background-color: black;
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
+}
+
+.booklabel {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 0;
+  height: 100%;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.booklabel:hover {
+  background-color: white;
+}
+
+.container input[type=checkbox] {
+  display: none;
+}
+
+.container input[type=checkbox]:checked + .booklabel {
+  background-color: yellow;
+  color: black;
+}
+
+#jou_ans {
+  color: white;
+  background-color: black;
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
+  display: none;
 }

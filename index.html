@@ -3,32 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Escape room</title>
-    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Welcome aboard!</h1>
     <div class="default">
       <div class="prompts" id="intro">
-        As y'all know, we are here in this room to figure out who among us is a traitor.<br><br>
-        The task is simple - we have to find who the traitor is, and where he / she hid the money.<br><br>
-        Look for the clues in this room to figure it out - y'all have 30 minutes!
-      </div>
-      <div class="buttons" id="button">
-        <form action="room1.html" method="GET">
-          <button class="btn">ENTER MAIN ROOM</button>
-        </form>
+        <h1>Welcome aboard!</h1>
+        <p>
+          You've been invited to the "Bitworld" created by the infamous Dr. Bitwise.<br>
+          In this world, everything is translated into lo-fi, 8~16-bit images.<br>
+          You will not be allowed to return to your normal world of 4K images unless you get out of this room in 30 minutes.<br>
+          Good luck!
+        </p>
+        <div class="buttons" id="button">
+          <form action="oroom.html" method="GET">
+            <button class="btn">ENTER MAIN ROOM</button>
+          </form>
+        </div>
+        <img src="img/bit.png" alt="Dr. Bitwise" id="bitwise">
       </div>
       <style media="screen">
         .default {
-          background-color: white;
-          background-image: url('./img/quest.jpeg');
-          background-size: contain;
+          background-color: black;
+          color: white;
           position: absolute;
           max-width: 25%;
-          max-height: 65%;
+          max-height: 60%;
           margin: auto;
           top: 0; left: 0; bottom: 0; right: 0;
+        }
+        h1 {
+          color: white;
+          font-size: 150%;
         }
         #intro {
           margin: 10%;
@@ -39,6 +46,9 @@
           max-height: 65%;
           margin: auto;
           top: 0; left: 0; bottom: 0; right: 0;
+        }
+        #bitwise {
+          width: 100%;
         }
       </style>
     </div>

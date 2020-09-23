@@ -2,16 +2,49 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main hall</title>
+    <title>Escape room</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="imgbox">
-      <img src="img/main.jpg" alt="main.jpg">
-      <a class="object" id="picture" href="#"></a>
-      <a class="object" id="memo" href="#"></a>
-      <a class="object" id="desktop" href="#"></a>
+    <div class="default">
+      <div class="prompts" id="intro">
+        <h1>Great work!</h1>
+        <p>
+          You've been released from the "Bitworld".<br>
+          You can now go back to the normal world where things aren't so gloomy.<br>
+          Enjoy your life with high resolution.
+        </p>
+        <img src="img/bit.png" alt="Dr. Bitwise" id="bitwise">
+      </div>
+      <style media="screen">
+        .default {
+          background-color: black;
+          color: white;
+          position: absolute;
+          max-width: 25%;
+          max-height: 60%;
+          margin: auto;
+          top: 0; left: 0; bottom: 0; right: 0;
+        }
+        h1 {
+          color: white;
+          font-size: 150%;
+        }
+        #intro {
+          margin: 10%;
+        }
+        #button {
+          position: relative;
+          max-width: 25%;
+          max-height: 65%;
+          margin: auto;
+          top: 0; left: 0; bottom: 0; right: 0;
+        }
+        #bitwise {
+          width: 100%;
+        }
+      </style>
     </div>
   </body>
 </html>
